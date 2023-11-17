@@ -44,7 +44,7 @@ function withdraw(uint256 _withdrawAmount) public {
     uint _previousBalance = balance;
 
     if (_withdrawAmount < 10) {
-        revert("Withdrawal amount must be greater than or equal to 10, can't you do more?");
+        revert("Withdrawal amount must be greater than or equal to 10");
     }
 
     if (balance < _withdrawAmount) {
